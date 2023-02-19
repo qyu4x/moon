@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include <valarray>
 
 using namespace std;
 
@@ -7,6 +8,12 @@ int main() {
 
     int A[5] = {1, 2, 3, 4, 5};
     int B[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    char name[25] = "c is string";
+    cout<<sizeof(name)<<endl; // check size of current memory
+    cout<<name<<endl;
+
+
     int C[5] = {1, 2, 3};
 
     printf("%d \n", sizeof(A));
@@ -18,7 +25,9 @@ int main() {
         cout<<B[i]<<endl;
     }
 
-    cout<<sizeof(C)<<endl;
+    cout<<"size of b is : "<<sizeof(B)<<endl;
+    cout<<"size of c is : "<<sizeof(C)<<endl;
+
     for(int c:C) {
         cout<<c<<endl;
     }

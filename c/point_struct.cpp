@@ -32,5 +32,7 @@ int main() {
     cout << rectangleHeapA->length << endl;
     cout << rectangleHeapA->breath << endl;
 
+    free(rectangleHeapA);
+
     return 0;
 }
